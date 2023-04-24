@@ -97,7 +97,6 @@ def generate_launch_description():
         description='Use simulation (Gazebo) clock if true')
 
     declare_params_file_cmd = DeclareLaunchArgument(
-        #TODO do i do the calibration here?
         'params_file',
         default_value=os.path.join(robtino_nav2_bringup_dir, 'params', 'robotino_nav2_params.yaml'),
         description='Full path to the ROS2 parameters file to use for all launched nodes')
